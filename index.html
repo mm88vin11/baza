@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0B">
+
+<title>БАЗА — сайты, приложения и боты, которые работают</title>
+<meta name="description" content="БАЗА (lllbaza) — студия разработки сайтов, веб-приложений и Telegram-ботов. Проектируем, дизайним и запускаем цифровые продукты под ключ. Это база.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://lllbaza.ru/">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="БАЗА">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="БАЗА — сайты, приложения и боты, которые работают">
+<meta property="og:description" content="Студия разработки сайтов, веб-приложений и Telegram-ботов. Проектируем, дизайним и запускаем под ключ. Это база.">
+<meta property="og:url" content="https://lllbaza.ru/">
+<meta property="og:image" content="https://lllbaza.ru/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="БАЗА — логотип /// на чёрном фоне">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="БАЗА — сайты, приложения и боты, которые работают">
+<meta name="twitter:description" content="Студия разработки сайтов, веб-приложений и Telegram-ботов под ключ. Это база.">
+<meta name="twitter:image" content="https://lllbaza.ru/og.png">
+<meta name="twitter:image:alt" content="БАЗА — логотип ///">
+
+<!-- Favicon (inline SVG, self-contained) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 100'%3E%3Crect width='120' height='100' fill='%230A0A0B'/%3E%3Cg fill='%23ffffff'%3E%3Cpolygon points='26,14 46,14 30,86 10,86'/%3E%3Cpolygon points='58,14 78,14 62,86 42,86'/%3E%3Cpolygon points='90,14 110,14 94,86 74,86'/%3E%3C/g%3E%3C/svg%3E">
+<meta name="apple-mobile-web-app-title" content="БАЗА">
+
+<!-- Perf hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+<!-- Fonts: Unbounded (display, Cyrillic) + Manrope (text, Cyrillic) -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;600;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;600;800;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;600;800;900&display=swap"></noscript>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lllbaza.ru/#organization",
+      "name": "БАЗА",
+      "alternateName": "lllbaza",
+      "url": "https://lllbaza.ru/",
+      "logo": "https://lllbaza.ru/og.png",
+      "description": "Студия разработки сайтов, веб-приложений и Telegram-ботов под ключ.",
+      "slogan": "Это база",
+      "email": "hello@lllbaza.ru",
+      "sameAs": ["https://t.me/lllbaza", "https://vk.com/lllbaza"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lllbaza.ru/#website",
+      "url": "https://lllbaza.ru/",
+      "name": "БАЗА",
+      "inLanguage": ["ru", "en"],
+      "publisher": { "@id": "https://lllbaza.ru/#organization" }
+    },
+    {
+      "@type": "Service",
+      "name": "Разработка сайтов, приложений и Telegram-ботов",
+      "serviceType": "Web & product development",
+      "provider": { "@id": "https://lllbaza.ru/#organization" },
+      "areaServed": "RU"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============ CRITICAL / FOUC-SAFE ============ */
+:root{
+  --bg:#0A0A0B;
+  --bg-soft:#111013;
+  --ink:#F4F2F7;
+  --ink-dim:#A29FAD;
+  --line:rgba(255,255,255,.10);
+  --violet:#8A5CFF;
+  --violet-2:#B490FF;
+  --grad: linear-gradient(115deg,#C9B6FF 0%,#A78BFA 22%,#F0ABFC 46%,#93C5FD 70%,#A78BFA 100%);
+  --maxw:1240px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{
+  font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size:clamp(15px,1.05vw,17px);line-height:1.55;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+.preloader{
+  position:fixed;inset:0;background:var(--bg);z-index:9999;
+  display:grid;place-items:center;grid-template-rows:1fr auto;padding:6vh 6vw;
+}
+.site-content{visibility:hidden}
+.is-ready .site-content{visibility:visible}
+img,svg,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;font-family:"Unbounded",system-ui,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.02em}
+p{margin:0}
+::selection{background:var(--violet);color:#fff}
+
+/* ============ LOGO MARK ============ */
+.mark{display:inline-block;line-height:0}
+.mark svg{height:1em;width:auto;overflow:visible}
+.mark .bar{fill:currentColor}
+.mark--grad .bar{fill:url(#lg-irid)}
+
+/* ============ PRELOADER ============ */
+.pre-logo{display:flex;flex-direction:column;align-items:center;gap:26px;color:#fff}
+.pre-logo .mark{font-size:clamp(64px,16vw,150px);filter:drop-shadow(0 0 34px rgba(138,92,255,.55))}
+.pre-meta{display:flex;justify-content:space-between;align-items:flex-end;width:100%;
+  font-family:"Unbounded";font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-dim)}
+.pre-count{font-variant-numeric:tabular-nums}
+.pre-track{position:relative;height:2px;width:100%;background:var(--line);margin-top:14px;overflow:hidden;grid-column:1/-1}
+.pre-fill{position:absolute;inset:0 100% 0 0;background:var(--grad);transform-origin:left}
+
+/* ============ CURSOR ============ */
+.cursor{position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;
+  background:var(--violet-2);pointer-events:none;z-index:9998;mix-blend-mode:difference;
+  transform:translate(-50%,-50%);transition:width .25s var(--ease),height .25s var(--ease),opacity .3s}
+.cursor--ring{width:40px;height:40px;background:transparent;border:1px solid rgba(180,144,255,.7);mix-blend-mode:normal}
+body.cursor-hot .cursor{width:8px;height:8px}
+body.cursor-hot .cursor--ring{width:64px;height:64px;border-color:var(--violet-2)}
+@media (hover:none),(pointer:coarse){.cursor{display:none}}
+
+/* ============ NAV ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:120;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:18px clamp(16px,4vw,44px);
+  transition:background .4s var(--ease),backdrop-filter .4s var(--ease),padding .4s var(--ease),border-color .4s;
+  border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(10,10,11,.72);backdrop-filter:blur(14px) saturate(1.3);border-bottom-color:var(--line);padding-top:12px;padding-bottom:12px}
+.nav-logo{display:flex;align-items:center;gap:12px;font-family:"Unbounded";font-weight:800;font-size:20px;letter-spacing:-.01em}
+.nav-logo-slot{display:inline-flex;font-size:22px;color:#fff}
+.nav-logo .word{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:600}
+.nav-links a{position:relative;color:var(--ink-dim);transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--grad);transition:width .35s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:16px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-family:"Unbounded";font-size:11px;font-weight:600;letter-spacing:.05em}
+.lang button{padding:7px 12px;background:transparent;color:var(--ink-dim);transition:color .3s,background .3s;line-height:1}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;
+  padding:14px 26px;font-family:"Unbounded";font-weight:600;font-size:14px;letter-spacing:.01em;
+  background:var(--ink);color:var(--bg);overflow:hidden;will-change:transform}
+.btn span{position:relative;z-index:2}
+.btn::before{content:"";position:absolute;inset:0;background:var(--grad);opacity:0;transition:opacity .4s var(--ease);z-index:1}
+.btn:hover::before{opacity:1}
+.btn--ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn--ghost::before{border-radius:999px}
+.btn--lg{padding:18px 34px;font-size:16px}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:transparent;position:relative}
+.burger i{position:absolute;left:11px;width:22px;height:2px;background:var(--ink);transition:.3s var(--ease)}
+.burger i:nth-child(1){top:15px}.burger i:nth-child(2){top:21px}.burger i:nth-child(3){top:27px}
+body.menu-open .burger i:nth-child(1){top:21px;transform:rotate(45deg)}
+body.menu-open .burger i:nth-child(2){opacity:0}
+body.menu-open .burger i:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+/* ============ LAYOUT ============ */
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(16px,4vw,44px)}
+section{position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:"Unbounded";font-size:12px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--violet-2)}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--violet)}
+.grad{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 7s linear infinite}
+@keyframes shimmer{to{background-position:200% 0}}
+
+/* ============ HERO ============ */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding-top:120px;padding-bottom:60px;position:relative;overflow:hidden}
+.hero-canvas{position:absolute;inset:0;z-index:0;opacity:.9}
+.hero-glow{position:absolute;z-index:0;width:60vw;height:60vw;max-width:820px;max-height:820px;
+  left:52%;top:34%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(138,92,255,.30),rgba(138,92,255,0) 62%);filter:blur(20px);pointer-events:none}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(38px,7vw,112px);font-weight:900;letter-spacing:-.04em}
+.hero .line{display:block;overflow:hidden}
+.hero .line .in{display:block}
+.hero-sub{max-width:44ch;margin-top:28px;font-size:clamp(16px,1.5vw,21px);color:var(--ink-dim)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero-foot{position:absolute;left:0;right:0;bottom:26px;z-index:2}
+.hero-foot .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.hero-tags{display:flex;gap:10px;flex-wrap:wrap}
+.chip{font-size:12.5px;font-weight:600;color:var(--ink-dim);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.scrollcue{display:flex;align-items:center;gap:10px;font-family:"Unbounded";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
+.scrollcue .dot{width:20px;height:32px;border:1px solid var(--line);border-radius:999px;position:relative}
+.scrollcue .dot::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:6px;border-radius:2px;background:var(--violet-2);transform:translateX(-50%);animation:cue 1.6s var(--ease) infinite}
+@keyframes cue{0%{opacity:0;transform:translate(-50%,-4px)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
+
+/* ============ MARQUEE ============ */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:22px 0;background:var(--bg-soft)}
+.marquee-row{display:flex;gap:0;white-space:nowrap;width:max-content;will-change:transform;animation:slide 26s linear infinite}
+.marquee:hover .marquee-row{animation-play-state:paused}
+.marquee span{font-family:"Unbounded";font-weight:800;font-size:clamp(26px,4vw,52px);letter-spacing:-.01em;
+  padding:0 28px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28)}
+.marquee span.fill{color:var(--ink);-webkit-text-stroke:0}
+.marquee span .star{color:var(--violet-2);-webkit-text-stroke:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ============ SECTION HEAD ============ */
+.sec{padding-block:clamp(80px,12vh,150px)}
+.sec-head{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:56px;max-width:760px}
+.sec-head h2{font-size:clamp(32px,5.4vw,74px);font-weight:800}
+.sec-head p{color:var(--ink-dim);font-size:clamp(16px,1.4vw,19px);max-width:56ch}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(34px)}
+.is-ready .revealed{opacity:1;transform:none}
+
+/* ============ SERVICES ============ */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;border:1px solid var(--line);border-radius:22px;padding:32px 30px 34px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));overflow:hidden;transition:border-color .4s,transform .5s var(--ease)}
+.card::after{content:"";position:absolute;inset:0;border-radius:22px;padding:1px;background:var(--grad);opacity:0;transition:opacity .4s;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.card:hover{transform:translateY(-6px)}
+.card:hover::after{opacity:1}
+.card-num{font-family:"Unbounded";font-size:13px;color:var(--violet-2);letter-spacing:.1em}
+.card h3{font-size:clamp(24px,2.4vw,32px);margin:22px 0 14px;font-weight:800}
+.card p{color:var(--ink-dim)}
+.card ul{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.card li{display:flex;gap:10px;align-items:baseline;font-size:14.5px;color:var(--ink)}
+.card li::before{content:"///";font-family:"Unbounded";font-size:11px;color:var(--violet);letter-spacing:-1px}
+
+/* ============ PROCESS ============ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.step{padding:34px 24px 40px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);position:relative}
+.step:nth-child(4n){border-right:0}
+.step .n{font-family:"Unbounded";font-weight:900;font-size:clamp(40px,5vw,68px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(180,144,255,.5)}
+.step h4{font-size:20px;margin:18px 0 12px;font-weight:700;font-family:"Unbounded"}
+.step p{color:var(--ink-dim);font-size:14.5px}
+
+/* ============ WORKS ============ */
+.works{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.work{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:340px;
+  display:flex;flex-direction:column;justify-content:flex-end;padding:30px;isolation:isolate;transition:transform .5s var(--ease)}
+.work:hover{transform:translateY(-6px)}
+.work .bgm{position:absolute;inset:0;z-index:-1;transition:transform .8s var(--ease),filter .6s}
+.work:hover .bgm{transform:scale(1.06)}
+.work .bgm::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.15),rgba(10,10,11,.86))}
+.work-tag{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.5);border:1px solid var(--line);backdrop-filter:blur(6px)}
+.work h3{font-size:clamp(24px,2.6vw,34px);margin:16px 0 8px;font-weight:800}
+.work p{color:rgba(244,242,247,.78);font-size:14.5px;max-width:40ch}
+.work .metric{margin-top:18px;display:flex;gap:26px}
+.work .metric b{font-family:"Unbounded";font-size:clamp(22px,2.4vw,30px);font-weight:800;display:block}
+.work .metric small{color:var(--ink-dim);font-size:12px}
+.g1{background:linear-gradient(135deg,#3a2a6b,#8A5CFF)}
+.g2{background:linear-gradient(135deg,#0e2a4a,#3d7bd6)}
+.g3{background:linear-gradient(135deg,#4a1f5e,#c65cff)}
+.g4{background:linear-gradient(135deg,#12303a,#2fb6c9)}
+
+/* ============ STATS ============ */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:left}
+.stat{border:1px solid var(--line);border-radius:20px;padding:30px 26px}
+.stat b{font-family:"Unbounded";font-weight:900;font-size:clamp(38px,5.5vw,68px);line-height:1;letter-spacing:-.03em;display:block}
+.stat span{color:var(--ink-dim);font-size:14px;margin-top:10px;display:block}
+
+/* ============ QUOTE ============ */
+.quote{max-width:1000px;margin-inline:auto;text-align:center}
+.quote blockquote{margin:0;font-family:"Unbounded";font-weight:600;font-size:clamp(24px,3.6vw,46px);line-height:1.18;letter-spacing:-.02em}
+.quote cite{display:block;margin-top:28px;font-style:normal;color:var(--ink-dim);font-size:15px}
+
+/* ============ FORM / CTA ============ */
+.cta-wrap{border:1px solid var(--line);border-radius:30px;overflow:hidden;background:var(--bg-soft);
+  display:grid;grid-template-columns:1.05fr 1fr}
+.cta-left{padding:clamp(34px,4vw,60px);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:22px}
+.cta-left h2{font-size:clamp(30px,4vw,56px)}
+.cta-left p{color:var(--ink-dim);max-width:38ch}
+.cta-contacts{margin-top:auto;display:flex;flex-direction:column;gap:12px;font-family:"Unbounded";font-size:15px}
+.cta-contacts a{display:inline-flex;align-items:center;gap:10px;width:fit-content}
+.cta-contacts a:hover .grad{filter:brightness(1.2)}
+.form{padding:clamp(34px,4vw,60px);display:flex;flex-direction:column}
+.form-prog{height:3px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:26px}
+.form-prog i{display:block;height:100%;width:25%;background:var(--grad);transition:width .5s var(--ease)}
+.qstep{display:none;flex-direction:column;gap:14px}
+.qstep.active{display:flex;animation:fadeUp .5s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.qstep label.q{font-family:"Unbounded";font-weight:600;font-size:18px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-weight:600;font-size:14px;background:transparent;transition:.3s var(--ease)}
+.opt:hover{border-color:var(--violet)}
+.opt.sel{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.field{display:flex;flex-direction:column;gap:8px}
+.field input,.field textarea{background:transparent;border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);font:inherit;transition:border-color .3s}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--violet)}
+.form-nav{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.form-done{display:none;text-align:center;padding:40px 0}
+.form-done.on{display:block;animation:fadeUp .5s var(--ease)}
+.form-done .mark{font-size:56px;color:var(--violet-2);margin-bottom:20px}
+.form-done h3{font-size:26px}
+.link-dim{color:var(--ink-dim);font-size:13px;text-align:center;margin-top:16px}
+
+/* ============ FOOTER ============ */
+.footer{border-top:1px solid var(--line);padding-block:60px 40px;margin-top:clamp(80px,12vh,140px)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;align-items:start}
+.footer-logo{font-family:"Unbounded";font-weight:900;font-size:clamp(56px,11vw,150px);line-height:.8;letter-spacing:-.04em;display:flex;align-items:center;gap:.1em}
+.footer-logo .mark{font-size:.86em}
+.footer h5{font-family:"Unbounded";font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 16px;font-weight:600}
+.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;font-size:15px}
+.footer ul a{color:var(--ink-dim);transition:color .3s}
+.footer ul a:hover{color:var(--ink)}
+.footer-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--ink-dim);font-size:13px}
+
+/* ============ MOBILE MENU ============ */
+.mmenu{position:fixed;inset:0;z-index:110;background:var(--bg);padding:100px clamp(20px,7vw,44px) 40px;
+  display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .5s var(--ease);visibility:hidden}
+body.menu-open .mmenu{transform:none;visibility:visible}
+.mmenu a{font-family:"Unbounded";font-weight:800;font-size:clamp(30px,9vw,52px);padding:12px 0;border-bottom:1px solid var(--line)}
+.mmenu .btn{margin-top:24px;justify-content:center}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:960px){
+  .svc{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:nth-child(4n){border-right:1px solid var(--line)}
+  .step:nth-child(2n){border-right:0}
+  .works{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cta-wrap{grid-template-columns:1fr}
+  .cta-left{border-right:0;border-bottom:1px solid var(--line)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav-links{display:none}
+  .nav-right .btn{display:none}
+  .burger{display:block}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .marquee-row,.grad,.scrollcue .dot::after{animation:none!important}
+  .reveal{opacity:1;transform:none}
+  *{scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG defs: iridescent gradient -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg-irid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9B6FF"/>
+      <stop offset=".3" stop-color="#A78BFA"/>
+      <stop offset=".55" stop-color="#F0ABFC"/>
+      <stop offset=".8" stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- template for the /// mark -->
+<template id="mark-tpl">
+  <svg viewBox="0 0 120 100" aria-hidden="true" focusable="false">
+    <polygon class="bar" points="26,0 48,0 30,100 8,100"/>
+    <polygon class="bar" points="62,0 84,0 66,100 44,100"/>
+    <polygon class="bar" points="98,0 120,0 102,100 80,100"/>
+  </svg>
+</template>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-logo">
+    <span class="mark mark--grad" id="preMark"></span>
+  </div>
+  <div style="width:100%">
+    <div class="pre-meta">
+      <span data-ru="Загрузка базы" data-en="Loading the base">Загрузка базы</span>
+      <span class="pre-count" id="preCount">0%</span>
+    </div>
+    <div class="pre-track"><span class="pre-fill" id="preFill"></span></div>
+  </div>
+</div>
+
+<div class="cursor cursor--dot" aria-hidden="true"></div>
+<div class="cursor cursor--ring" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" data-magnetic aria-label="БАЗА — на главную">
+    <span class="nav-logo-slot" id="navLogoSlot"><!-- logo flies in here --></span>
+    <span class="word">baza</span>
+  </a>
+  <nav class="nav-links" aria-label="Основная навигация">
+    <a href="#services" data-ru="Услуги" data-en="Services">Услуги</a>
+    <a href="#works" data-ru="Работы" data-en="Work">Работы</a>
+    <a href="#process" data-ru="Подход" data-en="Process">Подход</a>
+    <a href="#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#contact" class="btn" data-magnetic><span data-ru="Обсудить проект" data-en="Start a project">Обсудить проект</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mmenu" id="mmenu">
+  <a href="#services" data-ru="Услуги" data-en="Services">Услуги</a>
+  <a href="#works" data-ru="Работы" data-en="Work">Работы</a>
+  <a href="#process" data-ru="Подход" data-en="Process">Подход</a>
+  <a href="#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+  <a href="#contact" class="btn btn--lg"><span data-ru="Обсудить проект" data-en="Start a project">Обсудить проект</span></a>
+</div>
+
+<main class="site-content" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="eyebrow reveal" data-ru="Digital-студия · Это база" data-en="Digital studio · This is the base">Digital-студия · Это база</span>
+      <h1 id="heroTitle"
+          data-ru='<span class="line"><span class="in">Цифровые</span></span><span class="line"><span class="in">продукты, на</span></span><span class="line"><span class="in">которых <span class="grad">держится</span></span></span><span class="line"><span class="in">ваш бизнес</span></span>'
+          data-en='<span class="line"><span class="in">Digital products</span></span><span class="line"><span class="in">your business</span></span><span class="line"><span class="in">can <span class="grad">stand</span></span></span><span class="line"><span class="in">on</span></span>'>
+        <span class="line"><span class="in">Цифровые</span></span><span class="line"><span class="in">продукты, на</span></span><span class="line"><span class="in">которых <span class="grad">держится</span></span></span><span class="line"><span class="in">ваш бизнес</span></span>
+      </h1>
+      <p class="hero-sub reveal" data-ru="Проектируем, дизайним и запускаем сайты, веб-приложения и Telegram-ботов под ключ. Быстро, надёжно, с характером." data-en="We design, build and ship websites, web apps and Telegram bots end-to-end. Fast, reliable and with character.">Проектируем, дизайним и запускаем сайты, веб-приложения и Telegram-ботов под ключ. Быстро, надёжно, с характером.</p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn--lg" data-magnetic><span data-ru="Начать проект" data-en="Start a project">Начать проект</span></a>
+        <a href="#works" class="btn btn--lg btn--ghost" data-magnetic><span data-ru="Смотреть работы" data-en="See our work">Смотреть работы</span></a>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="wrap">
+        <div class="hero-tags reveal">
+          <span class="chip" data-ru="Сайты" data-en="Websites">Сайты</span>
+          <span class="chip" data-ru="Веб-приложения" data-en="Web apps">Веб-приложения</span>
+          <span class="chip" data-ru="Telegram-боты" data-en="Telegram bots">Telegram-боты</span>
+          <span class="chip" data-ru="Дизайн" data-en="Design">Дизайн</span>
+        </div>
+        <div class="scrollcue reveal"><span class="dot"></span><span data-ru="Листайте вниз" data-en="Scroll down">Листайте вниз</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-row" id="marquee"></div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal" data-ru="Что мы делаем" data-en="What we do">Что мы делаем</span>
+        <h2 class="reveal" data-ru="Три направления. Один&nbsp;уровень." data-en="Three services. One&nbsp;standard.">Три направления. Один&nbsp;уровень.</h2>
+        <p class="reveal" data-ru="От лендинга за неделю до сложного продукта с личным кабинетом и автоматизацией. Собираем то, что реально приносит результат." data-en="From a landing page in a week to a complex product with dashboards and automation. We build things that actually move the needle.">От лендинга за неделю до сложного продукта с личным кабинетом и автоматизацией. Собираем то, что реально приносит результат.</p>
+      </div>
+      <div class="svc">
+        <article class="card reveal" data-magnetic-soft>
+          <span class="card-num">01</span>
+          <h3 data-ru="Сайты и лендинги" data-en="Websites & landings">Сайты и лендинги</h3>
+          <p data-ru="Корпоративные сайты, промо и лендинги, которые выглядят дорого и конвертируют." data-en="Corporate sites, promos and landings that look premium and convert.">Корпоративные сайты, промо и лендинги, которые выглядят дорого и конвертируют.</p>
+          <ul>
+            <li data-ru="Дизайн под ключ" data-en="Design end-to-end">Дизайн под ключ</li>
+            <li data-ru="Анимации и 3D" data-en="Animation & 3D">Анимации и 3D</li>
+            <li data-ru="SEO и скорость" data-en="SEO & speed">SEO и скорость</li>
+          </ul>
+        </article>
+        <article class="card reveal" data-magnetic-soft>
+          <span class="card-num">02</span>
+          <h3 data-ru="Веб-приложения" data-en="Web apps">Веб-приложения</h3>
+          <p data-ru="Сервисы, личные кабинеты, дашборды и MVP на современном стеке." data-en="Services, dashboards, user portals and MVPs on a modern stack.">Сервисы, личные кабинеты, дашборды и MVP на современном стеке.</p>
+          <ul>
+            <li data-ru="Продуктовая логика" data-en="Product logic">Продуктовая логика</li>
+            <li data-ru="Интеграции и API" data-en="Integrations & API">Интеграции и API</li>
+            <li data-ru="Личные кабинеты" data-en="User dashboards">Личные кабинеты</li>
+          </ul>
+        </article>
+        <article class="card reveal" data-magnetic-soft>
+          <span class="card-num">03</span>
+          <h3 data-ru="Telegram-боты" data-en="Telegram bots">Telegram-боты</h3>
+          <p data-ru="Боты и мини-приложения: продажи, поддержка, автоматизация процессов." data-en="Bots and mini-apps: sales, support and process automation.">Боты и мини-приложения: продажи, поддержка, автоматизация процессов.</p>
+          <ul>
+            <li data-ru="Telegram Mini Apps" data-en="Telegram Mini Apps">Telegram Mini Apps</li>
+            <li data-ru="Приём платежей" data-en="Payments">Приём платежей</li>
+            <li data-ru="CRM и рассылки" data-en="CRM & campaigns">CRM и рассылки</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKS ============ -->
+  <section class="sec" id="works">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal" data-ru="Избранные работы" data-en="Selected work">Избранные работы</span>
+        <h2 class="reveal" data-ru="Результат, а не&nbsp;картинки" data-en="Results, not just&nbsp;pixels">Результат, а не&nbsp;картинки</h2>
+        <p class="reveal" data-ru="Несколько проектов, где дизайн и разработка сработали на бизнес-метрики." data-en="A few projects where design and engineering moved real business metrics.">Несколько проектов, где дизайн и разработка сработали на бизнес-метрики.</p>
+      </div>
+      <div class="works">
+        <article class="work reveal">
+          <div class="bgm g1"></div>
+          <span class="work-tag" data-ru="Сайт · Fintech" data-en="Website · Fintech">Сайт · Fintech</span>
+          <h3 data-ru="Nova Pay" data-en="Nova Pay">Nova Pay</h3>
+          <p data-ru="Промо-сайт финтех-стартапа с интерактивным 3D-героем и плавным сторителлингом." data-en="Promo site for a fintech startup with an interactive 3D hero and smooth scroll storytelling.">Промо-сайт финтех-стартапа с интерактивным 3D-героем и плавным сторителлингом.</p>
+          <div class="metric"><span><b class="count" data-to="212">0</b><small data-ru="% к заявкам" data-en="% leads">% к заявкам</small></span><span><b>1.4s</b><small data-ru="LCP" data-en="LCP">LCP</small></span></div>
+        </article>
+        <article class="work reveal">
+          <div class="bgm g2"></div>
+          <span class="work-tag" data-ru="Веб-приложение · SaaS" data-en="Web app · SaaS">Веб-приложение · SaaS</span>
+          <h3 data-ru="Orbit CRM" data-en="Orbit CRM">Orbit CRM</h3>
+          <p data-ru="SaaS-платформа с дашбордами, ролями и аналитикой в реальном времени." data-en="A SaaS platform with dashboards, roles and real-time analytics.">SaaS-платформа с дашбордами, ролями и аналитикой в реальном времени.</p>
+          <div class="metric"><span><b class="count" data-to="38">0</b><small data-ru="тыс. пользователей" data-en="k users">тыс. пользователей</small></span><span><b class="count" data-to="99" data-suffix=".9%">0</b><small data-ru="аптайм" data-en="uptime">аптайм</small></span></div>
+        </article>
+        <article class="work reveal">
+          <div class="bgm g3"></div>
+          <span class="work-tag" data-ru="Бот · E-commerce" data-en="Bot · E-commerce">Бот · E-commerce</span>
+          <h3 data-ru="Shopie Bot" data-en="Shopie Bot">Shopie Bot</h3>
+          <p data-ru="Telegram-магазин с каталогом, оплатой и автоворонкой продаж." data-en="A Telegram shop with catalog, payments and an automated sales funnel.">Telegram-магазин с каталогом, оплатой и автоворонкой продаж.</p>
+          <div class="metric"><span><b class="count" data-to="4" data-suffix=".7×">0</b><small data-ru="рост выручки" data-en="revenue growth">рост выручки</small></span><span><b class="count" data-to="24" data-suffix="/7">0</b><small data-ru="продажи" data-en="sales">продажи</small></span></div>
+        </article>
+        <article class="work reveal">
+          <div class="bgm g4"></div>
+          <span class="work-tag" data-ru="Mini App · Сервис" data-en="Mini App · Service">Mini App · Сервис</span>
+          <h3 data-ru="Zen Booking" data-en="Zen Booking">Zen Booking</h3>
+          <p data-ru="Telegram Mini App для онлайн-записи с оплатой и напоминаниями." data-en="A Telegram Mini App for online booking with payments and reminders.">Telegram Mini App для онлайн-записи с оплатой и напоминаниями.</p>
+          <div class="metric"><span><b class="count" data-to="60" data-suffix="%">0</b><small data-ru="меньше рутины" data-en="less busywork">меньше рутины</small></span><span><b class="count" data-to="9" data-suffix=" дн.">0</b><small data-ru="до запуска" data-en="to launch">до запуска</small></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="sec" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal" data-ru="Как мы работаем" data-en="How we work">Как мы работаем</span>
+        <h2 class="reveal" data-ru="Прозрачный процесс" data-en="A transparent process">Прозрачный процесс</h2>
+        <p class="reveal" data-ru="Без сюрпризов и «доработок в чёрном ящике». Вы видите прогресс на каждом шаге." data-en="No surprises, no black-box tinkering. You see progress at every step.">Без сюрпризов и «доработок в чёрном ящике». Вы видите прогресс на каждом шаге.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">01</div>
+          <h4 data-ru="Брифинг" data-en="Discovery">Брифинг</h4>
+          <p data-ru="Погружаемся в задачу, цели и метрики. Фиксируем объём и сроки." data-en="We dig into your goals and metrics, then lock scope and timeline.">Погружаемся в задачу, цели и метрики. Фиксируем объём и сроки.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">02</div>
+          <h4 data-ru="Дизайн" data-en="Design">Дизайн</h4>
+          <p data-ru="Прототип, визуальный язык и интерактив. Утверждаем до строчки кода." data-en="Prototype, visual language and motion — approved before a line of code.">Прототип, визуальный язык и интерактив. Утверждаем до строчки кода.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">03</div>
+          <h4 data-ru="Разработка" data-en="Build">Разработка</h4>
+          <p data-ru="Собираем на надёжном стеке, тестируем и оптимизируем скорость." data-en="We build on a reliable stack, test and optimize for speed.">Собираем на надёжном стеке, тестируем и оптимизируем скорость.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">04</div>
+          <h4 data-ru="Запуск" data-en="Launch">Запуск</h4>
+          <p data-ru="Выкатываем, подключаем аналитику и остаёмся на связи для развития." data-en="We ship, wire up analytics and stay in touch to keep growing it.">Выкатываем, подключаем аналитику и остаёмся на связи для развития.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat reveal"><b class="count" data-to="80" data-suffix="+">0</b><span data-ru="запущенных проектов" data-en="projects shipped">запущенных проектов</span></div>
+        <div class="stat reveal"><b class="count" data-to="7" data-suffix=" дн.">0</b><span data-ru="средний срок лендинга" data-en="avg. landing turnaround">средний срок лендинга</span></div>
+        <div class="stat reveal"><b class="count" data-to="98" data-suffix="%">0</b><span data-ru="клиентов возвращаются" data-en="clients come back">клиентов возвращаются</span></div>
+        <div class="stat reveal"><b class="count" data-to="6" data-suffix=" лет">0</b><span data-ru="в разработке" data-en="years in the craft">в разработке</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="quote">
+        <span class="eyebrow reveal" style="margin-bottom:26px" data-ru="Отзыв" data-en="Testimonial">Отзыв</span>
+        <blockquote class="reveal" data-ru="«Ребята из БАЗЫ сделали не просто сайт, а инструмент, который продаёт. Сроки — как обещали, качество — выше ожиданий. Это база.»" data-en="“The БАЗА team didn’t just build a website — they built a tool that sells. On time, above expectations. This really is the base.”">«Ребята из БАЗЫ сделали не просто сайт, а инструмент, который продаёт. Сроки — как обещали, качество — выше ожиданий. Это база.»</blockquote>
+        <cite class="reveal" data-ru="Алексей Морозов — основатель, Nova Pay" data-en="Alexey Morozov — founder, Nova Pay">Алексей Морозов — основатель, Nova Pay</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / FORM ============ -->
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="cta-wrap reveal">
+        <div class="cta-left">
+          <span class="eyebrow" data-ru="Бриф за 30 секунд" data-en="30-second brief">Бриф за 30 секунд</span>
+          <h2 data-ru="Расскажите о проекте" data-en="Tell us about your project">Расскажите о проекте</h2>
+          <p data-ru="Ответьте на пару вопросов — вернёмся с оценкой сроков и стоимости в течение дня." data-en="Answer a couple of questions and we’ll come back with a timeline and estimate within a day.">Ответьте на пару вопросов — вернёмся с оценкой сроков и стоимости в течение дня.</p>
+          <div class="cta-contacts">
+            <a href="https://t.me/lllbaza" data-magnetic><span class="grad">Telegram</span>&nbsp;<span data-ru="→ написать" data-en="→ message us">→ написать</span></a>
+            <a href="mailto:hello@lllbaza.ru" data-magnetic><span class="grad">hello@lllbaza.ru</span></a>
+          </div>
+        </div>
+
+        <form class="form" id="briefForm" novalidate>
+          <div class="form-prog"><i id="formBar"></i></div>
+
+          <!-- step 1 -->
+          <div class="qstep active" data-step="1">
+            <label class="q" data-ru="Что нужно сделать?" data-en="What do you need?">Что нужно сделать?</label>
+            <div class="opts" data-field="type">
+              <button type="button" class="opt" data-ru="Сайт / лендинг" data-en="Website / landing">Сайт / лендинг</button>
+              <button type="button" class="opt" data-ru="Веб-приложение" data-en="Web app">Веб-приложение</button>
+              <button type="button" class="opt" data-ru="Telegram-бот" data-en="Telegram bot">Telegram-бот</button>
+              <button type="button" class="opt" data-ru="Пока не знаю" data-en="Not sure yet">Пока не знаю</button>
+            </div>
+          </div>
+
+          <!-- step 2 -->
+          <div class="qstep" data-step="2">
+            <label class="q" data-ru="Ориентир по бюджету" data-en="Budget range">Ориентир по бюджету</label>
+            <div class="opts" data-field="budget">
+              <button type="button" class="opt" data-ru="до 100k ₽" data-en="under 100k ₽">до 100k ₽</button>
+              <button type="button" class="opt" data-ru="100–300k ₽" data-en="100–300k ₽">100–300k ₽</button>
+              <button type="button" class="opt" data-ru="300–700k ₽" data-en="300–700k ₽">300–700k ₽</button>
+              <button type="button" class="opt" data-ru="700k+ ₽" data-en="700k+ ₽">700k+ ₽</button>
+            </div>
+          </div>
+
+          <!-- step 3 -->
+          <div class="qstep" data-step="3">
+            <label class="q" data-ru="Когда нужен результат?" data-en="Timeline">Когда нужен результат?</label>
+            <div class="opts" data-field="timeline">
+              <button type="button" class="opt" data-ru="Вчера 🔥" data-en="Yesterday 🔥">Вчера 🔥</button>
+              <button type="button" class="opt" data-ru="1–2 недели" data-en="1–2 weeks">1–2 недели</button>
+              <button type="button" class="opt" data-ru="1–2 месяца" data-en="1–2 months">1–2 месяца</button>
+              <button type="button" class="opt" data-ru="Гибко" data-en="Flexible">Гибко</button>
+            </div>
+          </div>
+
+          <!-- step 4 -->
+          <div class="qstep" data-step="4">
+            <label class="q" data-ru="Куда прислать ответ?" data-en="Where to reach you?">Куда прислать ответ?</label>
+            <div class="field">
+              <input type="text" name="name" autocomplete="name" data-ru-ph="Ваше имя" data-en-ph="Your name" placeholder="Ваше имя" required>
+            </div>
+            <div class="field">
+              <input type="text" name="contact" autocomplete="email" data-ru-ph="Telegram, email или телефон" data-en-ph="Telegram, email or phone" placeholder="Telegram, email или телефон" required>
+            </div>
+            <div class="field">
+              <textarea name="details" rows="2" data-ru-ph="Пара слов о задаче (необязательно)" data-en-ph="A few words about the task (optional)" placeholder="Пара слов о задаче (необязательно)"></textarea>
+            </div>
+          </div>
+
+          <div class="form-nav" id="formNav">
+            <button type="button" class="btn btn--ghost" id="btnPrev" style="visibility:hidden"><span data-ru="Назад" data-en="Back">Назад</span></button>
+            <button type="button" class="btn" id="btnNext" data-magnetic><span data-ru="Далее" data-en="Next">Далее</span></button>
+          </div>
+
+          <div class="form-done" id="formDone">
+            <span class="mark mark--grad" id="doneMark"></span>
+            <h3 data-ru="Заявка отправлена!" data-en="Request sent!">Заявка отправлена!</h3>
+            <p style="color:var(--ink-dim);margin-top:12px" data-ru="Мы свяжемся с вами в течение дня. Это база." data-en="We’ll get back to you within a day. This is the base.">Мы свяжемся с вами в течение дня. Это база.</p>
+          </div>
+
+          <p class="link-dim" id="formHint" data-ru="Нажимая «Отправить», вы соглашаетесь на обработку данных." data-en="By submitting you agree to the processing of your data.">Нажимая «Отправить», вы соглашаетесь на обработку данных.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="mark mark--grad" id="footMark"></span><span class="grad">baza</span></div>
+          <p style="color:var(--ink-dim);max-width:34ch;margin-top:20px" data-ru="Digital-студия полного цикла. Сайты, приложения и боты, которые работают на результат." data-en="A full-cycle digital studio. Websites, apps and bots built to perform.">Digital-студия полного цикла. Сайты, приложения и боты, которые работают на результат.</p>
+        </div>
+        <div>
+          <h5 data-ru="Навигация" data-en="Navigate">Навигация</h5>
+          <ul>
+            <li><a href="#services" data-ru="Услуги" data-en="Services">Услуги</a></li>
+            <li><a href="#works" data-ru="Работы" data-en="Work">Работы</a></li>
+            <li><a href="#process" data-ru="Подход" data-en="Process">Подход</a></li>
+            <li><a href="#contact" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 data-ru="Связь" data-en="Get in touch">Связь</h5>
+          <ul>
+            <li><a href="https://t.me/lllbaza">Telegram</a></li>
+            <li><a href="https://vk.com/lllbaza">VK</a></li>
+            <li><a href="mailto:hello@lllbaza.ru">hello@lllbaza.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <span>© <span id="year"></span> БАЗА · lllbaza.ru</span>
+        <span data-ru="Сделано с характером. Это база." data-en="Made with character. This is the base.">Сделано с характером. Это база.</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ LIBRARIES (deferred, non-blocking) ============ -->
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+
+<script>
+/* ================= БАЗА — interactions ================= */
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var fine   = window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+  var revealed = false;
+
+  /* ---- inject /// marks from template ---- */
+  var tpl = document.getElementById("mark-tpl");
+  ["preMark","footMark","doneMark"].forEach(function(id){
+    var host = document.getElementById(id);
+    if(host) host.appendChild(tpl.content.cloneNode(true));
+  });
+  // the nav flying logo: a dedicated node we control
+  var flyLogo = document.createElement("span");
+  flyLogo.className = "mark mark--grad";
+  flyLogo.id = "flyLogo";
+  flyLogo.appendChild(tpl.content.cloneNode(true));
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ================= i18n ================= */
+  var current = "ru";
+  function setLang(lang){
+    current = lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-"+lang+"]").forEach(function(el){
+      el.innerHTML = el.getAttribute("data-"+lang);
+    });
+    document.querySelectorAll("[data-"+lang+"-ph]").forEach(function(el){
+      el.setAttribute("placeholder", el.getAttribute("data-"+lang+"-ph"));
+    });
+    document.querySelectorAll(".lang button").forEach(function(b){
+      b.setAttribute("aria-pressed", b.dataset.lang===lang ? "true":"false");
+    });
+    buildMarquee();
+    if(revealed) splitHero(); // re-run headline reveal on switch
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){ if(current!==b.dataset.lang) setLang(b.dataset.lang); });
+  });
+
+  /* ================= MARQUEE ================= */
+  function buildMarquee(){
+    var row = document.getElementById("marquee");
+    var txt = current==="ru" ? "ЭТО БАЗА" : "THIS IS THE BASE";
+    var unit = "";
+    for(var i=0;i<6;i++){
+      unit += '<span class="'+(i%2? "fill":"")+'">'+txt+' <span class="star">///</span> </span>';
+    }
+    row.innerHTML = unit + unit; // duplicate for seamless -50% loop
+  }
+
+  /* ================= PRELOADER (true progress) ================= */
+  var counter = document.getElementById("preCount");
+  var fill = document.getElementById("preFill");
+  var loaded = 0, total = 0, displayed = 0;
+  function paint(pct){
+    displayed += (pct - displayed) * .3;
+    if(Math.abs(pct - displayed) < .5) displayed = pct;
+    counter.textContent = Math.round(displayed) + "%";
+    fill.style.transform = "scaleX(" + (displayed/100) + ")";
+    if(displayed < pct) requestAnimationFrame(function(){ paint(pct); });
+  }
+  function tick(){ loaded++; paint(total ? (loaded/total*100) : 100); }
+
+  function trackImg(src){
+    return new Promise(function(res){
+      var im = new Image();
+      im.onload = im.onerror = function(){ tick(); res(); };
+      im.src = src;
+    });
+  }
+  function trackFonts(){
+    total++;
+    return (document.fonts ? document.fonts.ready : Promise.resolve())
+      .then(function(){ tick(); });
+  }
+  function startPreload(){
+    var srcs = [].slice.call(document.querySelectorAll("img")).map(function(i){return i.currentSrc||i.src;}).filter(Boolean);
+    total += srcs.length;
+    var jobs = srcs.map(trackImg).concat([trackFonts()]);
+    if(total===0){ paint(100); }
+    // hard safety: never hang
+    var safety = new Promise(function(res){ setTimeout(res, 4000); });
+    Promise.race([ Promise.all(jobs), safety ]).then(function(){ paint(100); finishPreload(); });
+  }
+
+  /* ================= FLIP logo → nav ================= */
+  function finishPreload(){
+    if(revealed) return;
+    var pre = document.getElementById("preloader");
+    var slot = document.getElementById("navLogoSlot");
+    var preMark = document.getElementById("preMark");
+    var hasGSAP = window.gsap && window.Flip;
+
+    if(hasGSAP && !reduce){
+      gsap.registerPlugin(Flip);
+      var state = Flip.getState(preMark);
+      slot.appendChild(preMark);          // re-parent big logo into nav
+      preMark.classList.remove("mark--grad"); // nav logo is solid white-ish (keeps grad via css? keep grad)
+      preMark.classList.add("mark--grad");
+      Flip.from(state, {
+        duration: 1.05, ease: "power3.inOut", absolute:true, scale:true,
+        onComplete: function(){ revealPage(pre); }
+      });
+      // fade preloader chrome (text/track) while logo flies
+      gsap.to(pre.querySelectorAll(".pre-meta, .pre-track"), {autoAlpha:0, duration:.4});
+      gsap.to(pre, {backgroundColor:"rgba(10,10,11,0)", duration:.9, delay:.25});
+    } else {
+      slot.appendChild(preMark);
+      revealPage(pre);
+    }
+  }
+
+  function revealPage(pre){
+    if(revealed) return;
+    revealed = true;
+    document.body.classList.add("is-ready");
+    if(pre){
+      if(window.gsap && !reduce){
+        gsap.to(pre, {autoAlpha:0, duration:.5, onComplete:function(){ pre.remove(); }});
+      } else { pre.style.display="none"; pre.remove && pre.remove(); }
+    }
+    initScene();
+  }
+
+  /* ================= SCENE (after reveal) ================= */
+  var lenis, splitInstance;
+
+  function splitHero(){
+    var title = document.getElementById("heroTitle");
+    if(!title) return;
+    if(!window.gsap || !window.SplitText || reduce){
+      // ensure visible
+      title.querySelectorAll(".in").forEach(function(n){ n.style.transform="none"; n.style.opacity=1; });
+      return;
+    }
+    gsap.registerPlugin(SplitText);
+    var ins = title.querySelectorAll(".line .in");
+    gsap.set(ins, {yPercent:110});
+    gsap.to(ins, {yPercent:0, duration:1, ease:"power4.out", stagger:.09});
+  }
+
+  function initScene(){
+    var hasGSAP = window.gsap;
+    if(hasGSAP) gsap.registerPlugin(window.ScrollTrigger);
+
+    /* Lenis smooth scroll (desktop, non-reduced) */
+    if(window.Lenis && !reduce && fine){
+      lenis = new Lenis({ lerp:.1, wheelMultiplier:1, smoothWheel:true });
+      if(hasGSAP && window.ScrollTrigger){
+        lenis.on("scroll", ScrollTrigger.update);
+        gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+        gsap.ticker.lagSmoothing(0);
+      } else {
+        function raf(t){ lenis.raf(t); requestAnimationFrame(raf); } requestAnimationFrame(raf);
+      }
+    }
+
+    /* anchor links → lenis/native */
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener("click", function(e){
+        var id = a.getAttribute("href");
+        if(id.length<2) return;
+        var t = document.querySelector(id);
+        if(!t) return;
+        e.preventDefault();
+        closeMenu();
+        if(lenis) lenis.scrollTo(t, {offset:-70, duration:1.1});
+        else t.scrollIntoView({behavior: reduce?"auto":"smooth"});
+      });
+    });
+
+    /* hero headline */
+    splitHero();
+    document.querySelectorAll(".hero .reveal").forEach(function(el){ el.classList.add("revealed"); });
+
+    /* scroll reveals */
+    if(hasGSAP && window.ScrollTrigger && !reduce){
+      gsap.utils.toArray(".reveal:not(.revealed)").forEach(function(el){
+        ScrollTrigger.create({
+          trigger: el, start: "top 88%", once:true,
+          onEnter: function(){
+            gsap.to(el, {opacity:1, y:0, duration:.9, ease:"power3.out"});
+            el.classList.add("revealed");
+          }
+        });
+      });
+      /* number counters */
+      gsap.utils.toArray(".count").forEach(function(el){
+        var to = parseFloat(el.dataset.to)||0, suffix = el.dataset.suffix||"";
+        var o = {v:0};
+        ScrollTrigger.create({ trigger: el, start:"top 90%", once:true, onEnter:function(){
+          gsap.to(o, {v:to, duration:1.6, ease:"power2.out", onUpdate:function(){
+            el.textContent = (to%1===0 ? Math.round(o.v) : o.v.toFixed(1)) + suffix;
+          }});
+        }});
+      });
+    } else {
+      document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("revealed"); });
+      document.querySelectorAll(".count").forEach(function(el){ el.textContent=(el.dataset.to||"")+(el.dataset.suffix||""); });
+    }
+
+    initCursor();
+    initMagnetic();
+    initHeroCanvas();
+  }
+
+  /* ================= NAV state / menu ================= */
+  var nav = document.getElementById("nav");
+  function onScroll(){ nav.classList.toggle("scrolled", window.scrollY>20); }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  var burger = document.getElementById("burger");
+  function closeMenu(){ document.body.classList.remove("menu-open"); burger.setAttribute("aria-expanded","false"); }
+  burger.addEventListener("click", function(){
+    var open = document.body.classList.toggle("menu-open");
+    burger.setAttribute("aria-expanded", open?"true":"false");
+  });
+
+  /* ================= CUSTOM CURSOR ================= */
+  function initCursor(){
+    if(!fine) return;
+    var dot = document.querySelector(".cursor--dot");
+    var ring = document.querySelector(".cursor--ring");
+    var rx=0, ry=0, dx=0, dy=0;
+    document.addEventListener("mousemove", function(e){
+      dx=e.clientX; dy=e.clientY;
+      dot.style.transform = "translate("+(dx-6)+"px,"+(dy-6)+"px)";
+    });
+    (function loop(){ rx+=(dx-rx)*.18; ry+=(dy-ry)*.18;
+      ring.style.transform="translate("+(rx-20)+"px,"+(ry-20)+"px)"; requestAnimationFrame(loop); })();
+    document.querySelectorAll("a,button,[data-magnetic],.opt").forEach(function(el){
+      el.addEventListener("mouseenter",function(){ document.body.classList.add("cursor-hot"); });
+      el.addEventListener("mouseleave",function(){ document.body.classList.remove("cursor-hot"); });
+    });
+  }
+
+  /* ================= MAGNETIC ================= */
+  function initMagnetic(){
+    if(!fine || reduce || !window.gsap) return;
+    document.querySelectorAll("[data-magnetic]").forEach(function(el){
+      var xTo = gsap.quickTo(el,"x",{duration:.4,ease:"power3"});
+      var yTo = gsap.quickTo(el,"y",{duration:.4,ease:"power3"});
+      el.addEventListener("mousemove", function(e){
+        var r = el.getBoundingClientRect();
+        xTo((e.clientX-(r.left+r.width/2))*.35);
+        yTo((e.clientY-(r.top+r.height/2))*.35);
+      });
+      el.addEventListener("mouseleave", function(){ xTo(0); yTo(0); });
+    });
+  }
+
+  /* ================= HERO CANVAS (lightweight particle field) ================= */
+  function initHeroCanvas(){
+    var c = document.getElementById("heroCanvas");
+    if(!c || reduce) return;
+    var ctx = c.getContext("2d"), w, h, dpr, pts=[], raf, running=true;
+    function size(){
+      dpr = Math.min(window.devicePixelRatio||1, 2);
+      w = c.clientWidth; h = c.clientHeight;
+      c.width = w*dpr; c.height = h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    function build(){
+      var n = Math.min(70, Math.floor(w*h/16000));
+      pts = []; for(var i=0;i<n;i++){ pts.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}); }
+    }
+    function frame(){
+      if(!running) return;
+      ctx.clearRect(0,0,w,h);
+      for(var i=0;i<pts.length;i++){
+        var p=pts[i]; p.x+=p.vx; p.y+=p.vy;
+        if(p.x<0||p.x>w)p.vx*=-1; if(p.y<0||p.y>h)p.vy*=-1;
+        for(var j=i+1;j<pts.length;j++){
+          var q=pts[j], dx=p.x-q.x, dy=p.y-q.y, d=dx*dx+dy*dy;
+          if(d<14000){ var a=(1-d/14000)*.5; ctx.strokeStyle="rgba(150,120,255,"+a+")"; ctx.lineWidth=1;
+            ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke(); }
+        }
+        ctx.fillStyle="rgba(180,160,255,.7)"; ctx.beginPath(); ctx.arc(p.x,p.y,1.3,0,6.283); ctx.fill();
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    size(); build(); frame();
+    window.addEventListener("resize", function(){ size(); build(); });
+    document.addEventListener("visibilitychange", function(){
+      running = !document.hidden; if(running){ frame(); } else if(raf){ cancelAnimationFrame(raf); }
+    });
+    // pause when hero scrolled away (perf)
+    if(window.ScrollTrigger){
+      ScrollTrigger.create({ trigger:".hero", start:"bottom top",
+        onEnter:function(){ running=false; if(raf)cancelAnimationFrame(raf); },
+        onLeaveBack:function(){ running=true; frame(); } });
+    }
+  }
+
+  /* ================= MULTI-STEP FORM ================= */
+  (function form(){
+    var steps = [].slice.call(document.querySelectorAll(".qstep"));
+    var bar = document.getElementById("formBar");
+    var prev = document.getElementById("btnPrev");
+    var next = document.getElementById("btnNext");
+    var done = document.getElementById("formDone");
+    var nav = document.getElementById("formNav");
+    var hint = document.getElementById("formHint");
+    var i = 0, data = {};
+
+    document.querySelectorAll(".opts").forEach(function(group){
+      group.querySelectorAll(".opt").forEach(function(opt){
+        opt.addEventListener("click", function(){
+          group.querySelectorAll(".opt").forEach(function(o){o.classList.remove("sel");});
+          opt.classList.add("sel");
+          data[group.dataset.field] = opt.textContent.trim();
+          setTimeout(function(){ if(i<steps.length-1) go(i+1); }, 220);
+        });
+      });
+    });
+
+    function label(next, submit){
+      next.querySelector("span").textContent = submit
+        ? (current==="ru"?"Отправить":"Send")
+        : (current==="ru"?"Далее":"Next");
+    }
+    function go(n){
+      i = n;
+      steps.forEach(function(s,k){ s.classList.toggle("active", k===n); });
+      bar.style.width = ((n+1)/steps.length*100)+"%";
+      prev.style.visibility = n===0 ? "hidden":"visible";
+      label(next, n===steps.length-1);
+    }
+    prev.addEventListener("click", function(){ if(i>0) go(i-1); });
+    next.addEventListener("click", function(){
+      if(i < steps.length-1){ go(i+1); return; }
+      // final: validate
+      var f = document.getElementById("briefForm");
+      var name = f.name.value.trim(), contact = f.contact.value.trim();
+      if(!name || !contact){
+        [f.name,f.contact].forEach(function(el){ if(!el.value.trim()) el.style.borderColor="#ff5c7a"; });
+        return;
+      }
+      data.name = name; data.contact = contact; data.details = f.details.value.trim();
+      // Build a mailto so the lead actually reaches the studio (no backend needed)
+      var subj = encodeURIComponent("Заявка с сайта БАЗА — "+(data.type||""));
+      var body = encodeURIComponent(
+        "Имя: "+data.name+"\nКонтакт: "+data.contact+
+        "\nТип: "+(data.type||"—")+"\nБюджет: "+(data.budget||"—")+
+        "\nСроки: "+(data.timeline||"—")+"\nДетали: "+(data.details||"—"));
+      steps.forEach(function(s){ s.classList.remove("active"); });
+      nav.style.display="none"; hint.style.display="none";
+      bar.style.width="100%";
+      done.classList.add("on");
+      // open mail client as a best-effort delivery
+      try{ window.location.href = "mailto:hello@lllbaza.ru?subject="+subj+"&body="+body; }catch(e){}
+    });
+
+    // clear error border on input
+    document.querySelectorAll(".field input").forEach(function(el){
+      el.addEventListener("input", function(){ el.style.borderColor=""; });
+    });
+  })();
+
+  /* ================= BOOT ================= */
+  setLang("ru");         // populate + marquee
+  startPreload();        // begin real asset tracking
+  // absolute safety net: reveal no matter what
+  setTimeout(function(){ if(!revealed) finishPreload(); }, 6500);
+  window.addEventListener("load", function(){ paint(100); });
+})();
+</script>
+</body>
+</html>
